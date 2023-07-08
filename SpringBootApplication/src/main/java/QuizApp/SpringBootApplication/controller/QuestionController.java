@@ -16,7 +16,7 @@ import QuizApp.SpringBootApplication.model.Question;
 import QuizApp.SpringBootApplication.services.QuestionService;
 
 @RestController
-@RequestMapping("question")        //First file
+@RequestMapping("question")        
 public class QuestionController {
 	@Autowired
     QuestionService questionService;

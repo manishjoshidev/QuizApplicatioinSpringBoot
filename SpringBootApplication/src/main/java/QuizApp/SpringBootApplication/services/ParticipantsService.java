@@ -13,26 +13,22 @@ import QuizApp.SpringBootApplication.model.participant;
 
 @Service
 public class ParticipantsService {
-    private final ParticipantDao participantDao;
+	@Autowired
+   ParticipantDao participantDao;
 
-    @Autowired
-    public ParticipantsService(ParticipantDao participantDao) {
-        this.participantDao = participantDao;
-    }
-
-    public ResponseEntity<List<participant>> getScore() {
+	public ResponseEntity<List<participant>> getScore() {
         try {
-            return new ResponseEntity<>(participantDao.getScore(), HttpStatus.OK);
+            return new ResponseEntity<List<participant>>(participantDao.getId(),HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>( HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> getParticipantsId() {
         try {
-            return new ResponseEntity<>(participantDao.getId(), HttpStatus.OK);
+            return new ResponseEntity<String>(participantDao.getScore(),HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,28 +1,31 @@
 package QuizApp.SpringBootApplication.dao;
 
+import java.util.List;
+
+import QuizApp.SpringBootApplication.model.participant;
+
 public class ParticipantDao {
 
-	public static Object findAll(String category) {
+	public  Object findAll(String category) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public static Object findId() {
+	
+
+	public Object getId(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public static Object findId(String id) {
+	public String getScore() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Object getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	public Object getScore() {
+
+	public List<participant> getId() {
 		// TODO Auto-generated method stub
 		return null;
 	}

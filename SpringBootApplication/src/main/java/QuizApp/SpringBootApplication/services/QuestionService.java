@@ -13,8 +13,7 @@ import org.springframework.stereotype.Service;
 
 import QuizApp.SpringBootApplication.dao.QuestionDao;
 @Service
-
-	public class QuestionService {
+   public class QuestionService {
 	    @Autowired
 	    QuestionDao questionDao;
 

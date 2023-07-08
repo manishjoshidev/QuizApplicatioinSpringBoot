@@ -31,9 +31,6 @@ public class participant {
 	public void setQuizId(String quizId) {
 		QuizId = quizId;
 	}
-     
-     
-     
-     
+      
      
 }
